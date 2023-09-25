@@ -7,6 +7,7 @@
   </head>
   <body></body>
   <script>
+    /*
     const product = {
       name: "socks",
       price: 1090,
@@ -19,5 +20,21 @@
     console.log(product);
     delete product.price;
     console.log(product);
+    */
+    const product2 = {
+      name: "shirt",
+      "delivery-time": "1 day",
+      rating: {
+        star: 4.5,
+        count: 87,
+      },
+      fun: function function1() {
+        console.log("inside object");
+      },
+    };
+    product2.fun();
+    console.log(JSON.stringify(product2));
+    let jsonstring = JSON.stringify(product2);
+    json.parse(jsonstring);
   </script>
 </html>
